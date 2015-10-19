@@ -1,0 +1,448 @@
+/*-------------------------
+Created by Sonya Chen 2015
+-------------------------*/
+
+/**
+---------------------------
+TABLE OF CONTENTS
+---------------------------
+:: Shared Styles
+:: Header
+:: Back To Top
+:: Intro
+:: About
+:: Projects
+:: Timeline
+:: Contact
+:: Footer
+**/
+
+
+
+/*-------------------------
+	Shared Styles
+-------------------------*/
+body{
+	font-family: 'Lato', sans-serif;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	text-align: center;
+	background: url(../images/subsection_bg.png);
+	color: #7f8c97;
+  	background-color: #e9f0f5;
+}
+
+h1{
+	font-size: 85px;
+	color: #629a8a;
+	margin: 0;	
+}
+h2{
+	color: #000;
+}
+
+hr{
+	clear: both;
+	border: 0; 
+	height: 1px; 
+	background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+	background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+	background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+	background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+}
+
+.row{
+	margin: 0 auto;
+	max-width: 980px;
+}
+
+li{
+	list-style:none;
+}
+
+a,
+a:hover{
+	text-decoration: none;
+}
+
+ul{
+	padding-left: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+/*-------------------------
+	Header
+-------------------------*/
+
+header{
+	background: url('../images/nav_bg.png');
+	position: relative;
+	height: 120px;
+	
+	-webkit-box-shadow: 0px 1px 28px 13px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 1px 28px 13px rgba(0,0,0,0.75);
+	box-shadow: 0px 1px 28px 13px rgba(0,0,0,0.75);
+}
+
+#logo{
+	height: 100px;
+	width: 100px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	float: left;
+}
+
+nav{
+	padding-top: 50px;
+	float: right;
+	display: block;
+}
+
+nav ul{
+	height: auto;
+}
+
+nav li{
+	display: inline-block;
+	position: relative;
+}
+
+nav li a{
+	display: block;
+	color: #fff;
+	padding: 0 2em;
+	
+	-webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+	nav li:hover a{
+		color: #939393;
+	}
+
+
+
+
+
+/*-------------------------
+	Back To Top
+-------------------------*/
+#back-to-top{
+	position: fixed;
+	right: 20px;
+    top: 20px;
+    background: #696969 url('../images/back-to-top.png') no-repeat;
+    width: 56px;
+    height: 56px;
+    z-index: 5;
+	display: none;
+}
+
+#back-to-top:hover{
+	background-color: #629a8a;
+}
+
+
+/*-------------------------
+	Intro
+-------------------------*/
+#intro{
+	height: 100vh;
+	width: 100%;
+	padding-top: 200px;
+	padding-bottom: 375px;
+	background: url('../images/about_bg.png');
+	font-family: 'Dosis', sans-serif;
+}
+
+#intro #hello{
+	font-family: 'Rochester', cursive;
+	font-size: 90px;
+	color: #467f6f;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 1);
+	margin: 0;
+}
+#intro h1{
+	font-size: 30px;
+	color: #525252;
+	text-transform: uppercase;
+}
+
+#intro h2{
+	font-size: 40px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+#intro p{
+	font-size: 20px;
+	color: #000;
+}
+
+
+
+/*-------------------------
+	About
+-------------------------*/
+#about{
+	height: 100%;
+	width: 100%;
+	overflow: auto;
+	margin-top: 200px;
+	margin-bottom: 100px;
+}
+
+.item{
+	float: left;
+	display: block;
+	width: 48%;
+	margin-right: 2%;
+	text-align: left;
+}
+	.item:last-child{
+		margin-right: 0;
+	}
+
+
+.skillbar{
+	position: relative;	
+	display: block;
+	margin-bottom: 15px;
+	width: 100%;
+	background: #ccc;
+	height: 35px;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	-webkit-transition:0.4s linear;
+	-moz-transition:0.4s linear;
+	-ms-transition:0.4s linear;
+	-o-transition:0.4s linear;
+	transition:0.4s linear;
+	-webkit-transition-property:width, background-color;
+	-moz-transition-property:width, background-color;
+	-ms-transition-property:width, background-color;
+	-o-transition-property:width, background-color;
+	transition-property:width, background-color;
+}
+
+.skillbar-title {
+	position:absolute;
+	top:0;
+	left:0;
+	width:110px;
+	font-weight:bold;
+	font-size:13px;
+	color:#ffffff;
+	background:#6adcfa;
+	-webkit-border-top-left-radius:3px;
+	-webkit-border-bottom-left-radius:4px;
+	-moz-border-radius-topleft:3px;
+	-moz-border-radius-bottomleft:3px;
+	border-top-left-radius:3px;
+	border-bottom-left-radius:3px;
+}
+
+.skillbar-title span {
+	display:block;
+	background:rgba(0, 0, 0, 0.1);
+	padding:0 20px;
+	height:35px;
+	line-height:35px;
+	-webkit-border-top-left-radius:3px;
+	-webkit-border-bottom-left-radius:3px;
+	-moz-border-radius-topleft:3px;
+	-moz-border-radius-bottomleft:3px;
+	border-top-left-radius:3px;
+	border-bottom-left-radius:3px;
+}
+
+.skillbar-bar {
+	padding-left: 110px;
+	height:35px;
+	width:0px;
+	background:#6adcfa;
+	border-radius: 3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+}
+
+.skillbar-percent {
+	position:absolute;
+	right:10px;
+	top:0;
+	font-size:11px;
+	height:35px;
+	line-height:35px;
+	color:#ffffff;
+	color:rgba(0, 0, 0, 0.4);
+}
+
+
+/*-------------------------
+	Projects
+-------------------------*/
+#projects{
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+
+.galleryContainer {
+	display: inline-block;
+	vertical-align: top;
+	margin-right: -5px;
+	overflow: hidden;
+	position: relative;
+	vertical-align: top;
+	width: 300px;
+	height: 200px;
+	cursor: pointer;
+}
+
+.galleryContainer img {
+	transition: 0.3s;
+}
+
+.galleryContainer:hover img {
+	transform: scale(1.2);
+	-webkit-transform: scale(1.2);
+	-moz-transform: scale(1.2);
+}
+
+.galleryContainer:hover h2{
+	color: #fff;
+	transition: 0.3s;
+    padding-top: 10%;
+}
+
+.galleryInfoContainer {
+	position: absolute;
+	background: rgba(5,5,5,0.8);
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 3;
+	opacity: 0;
+	transition: 0.2s;
+}
+
+.galleryContainer:hover .galleryInfoContainer {
+	opacity: 1;
+}
+
+.galleryCat {
+	color: #5cd9fd;
+	font-weight: bold;
+}
+
+.galleryDescription {
+	color: #aaa;
+	font-family: sans-serif;
+}
+
+
+
+
+/*-------------------------
+	Timeline
+-------------------------*/
+#timeline{
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+
+
+/*------------------------
+	Footer
+------------------------*/
+footer{
+	background: url('../images/nav_bg.png');
+	height: 100%;
+	margin: 0 auto;
+	display: block;
+	overflow: auto;
+	text-align: left;
+	padding-top: 50px;
+	padding-bottom: 20px;
+}
+
+.footer-left{
+	float: left;
+	position: relative;
+	padding-top: 50px;
+}
+.footer-right{
+	float: right;
+	position: relative;
+}
+
+.social-icons{
+	display: block;
+	padding-bottom: 50px;
+}
+.social-icons a{
+	display: inline-block;
+	height: 35px;
+	width: 35px;
+	margin-right: 10px;
+}
+	.social-icons a:last-child{
+		margin-right: 0;
+	}
+.social-icons a.linkedin{
+	background-image: url(../images/linkedin_icon.png);
+	background-size: 35px 35px;
+}
+.social-icons a.deviantart{
+	background-image: url(../images/deviantart_icon.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.copyright{
+	display: block;
+}
+
+
+footer h1{
+	font-size: 20px;
+	margin-bottom: 25px;
+}
+
+#contact input,
+#contact textarea{
+	font-family: 'Lato', sans-serif;
+	width: 100%;
+	color: #d1d2d2;
+    padding: 1.3rem;
+	border-radius: 3px;
+    background-color: #444;
+    box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+    border: none;
+    resize: none;
+	margin-bottom: 15px;
+}
+	#contact input:focus,
+	#contact textarea:focus{
+		outline: none !important;
+		border: 1px solid#629a8a;
+	}
+#contact button{
+	border-radius: 3px;
+    background-color: #33383b;
+    color: #ffffff;
+    border: 0;
+    padding: 1rem 3.5rem;
+    font-weight: bold;
+    float: right;
+    margin: 0 0 2rem 0;
+}
+	#contact button:hover{
+		background-color: #629a8a;
+	}
