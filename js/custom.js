@@ -60,7 +60,7 @@ $(document).ready(function(){
                 var barWidth = $(this).find('.skillbar-percent')[0].innerHTML;
                 $(this).find('.skillbar-bar').animate({
                     width: barWidth
-                },5000);
+                },2500);
             });
         }
     })
