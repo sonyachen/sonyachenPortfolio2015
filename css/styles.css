@@ -89,7 +89,7 @@ img {
 header{
 	background: url('../images/nav_bg.png');
 	position: relative;
-	height: 120px;
+	overflow: hidden;
 	
 	-webkit-box-shadow: 0px 1px 28px 13px rgba(0,0,0,0.75);
 	-moz-box-shadow: 0px 1px 28px 13px rgba(0,0,0,0.75);
@@ -160,7 +160,7 @@ nav li a{
 	Intro
 -------------------------*/
 #intro{
-	height: 100vh;
+	height: 90vh;
 	width: 100%;
 	padding-top: 200px;
 	padding-bottom: 375px;
@@ -215,6 +215,9 @@ nav li a{
 	.item:last-child{
 		margin-right: 0;
 	}
+.sm-item{
+	display: none;
+}
 
 
 .skillbar{
@@ -469,3 +472,90 @@ footer h1{
 	#contact button:hover{
 		background-color: #629a8a;
 	}
+	
+	
+@media only screen and (max-device-width: 480px){
+	h1{
+		font-size: 50px;
+	}
+	h2{
+		margin-bottom: 5px;
+	}
+	
+	
+	
+	
+	#logo{
+		height: 50px;
+		width: 50px;
+		float: none;
+		text-align: center;
+	}
+	
+	nav{
+		padding-top: 0;
+		float: none;
+	}
+	nav li a{
+		padding: 0.5em;
+	}
+	ul{
+		margin-top: 0;
+	}
+	
+	
+	
+	#back-to-top{
+		width: 30px;
+		height: 30px;
+		background-size: 30px 30px;
+	}
+	
+	
+	
+	#intro{
+		padding-top: 50px;
+	}
+	#intro h2{
+		font-size: 20px;
+	}
+	
+	
+	#about{
+		margin-top: 50px;
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+	.sm-item{
+		width: 100%;
+		display: block;
+	}
+	.item{
+		display: none;
+	}
+	#about p{
+		margin-top: 5px;
+		text-align: justify;
+	}
+	
+	
+	#cd-timeline{
+		margin-left: 5px;
+		margin-right: 5px;
+	}
+	.cd-timeline-content{
+		text-align: left;
+	}
+	
+	
+	
+	footer{
+		text-align: center;
+		width: 100%;
+	}
+	.footer-left,
+	.footer-right{
+		width: 100%;
+		float: left;
+	}
+}
