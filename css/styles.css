@@ -61,9 +61,17 @@ li{
 	list-style:none;
 }
 
-a,
+a{
+	text-decoration: none;
+	color: #fff;
+	-webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
 a:hover{
 	text-decoration: none;
+	color: #939393;
 }
 
 ul{
@@ -369,22 +377,26 @@ footer{
 	overflow: auto;
 	text-align: left;
 	padding-top: 50px;
-	padding-bottom: 20px;
+	padding-bottom: 50px;
 }
 
 .footer-left{
 	float: left;
 	position: relative;
-	padding-top: 50px;
 }
 .footer-right{
 	float: right;
 	position: relative;
 }
 
+footer h1{
+	font-size: 40px;
+	margin-bottom: 15px;
+}
+
 .social-icons{
 	display: block;
-	padding-bottom: 50px;
+	padding-bottom: 15px;
 }
 .social-icons a{
 	display: inline-block;
@@ -410,10 +422,7 @@ footer{
 }
 
 
-footer h1{
-	font-size: 20px;
-	margin-bottom: 25px;
-}
+
 
 #contact input,
 #contact textarea{

@@ -65,3 +65,14 @@ $(document).ready(function(){
         }
     })
 });
+
+/* Email */
+$(document).ready(function(){    
+    var username = "sonyachennh";
+    var hostname = "gmail.com";
+    var linktext = username + "@" + hostname ;
+    
+    var code = "<a href='" + "mail" + "to:" + username + "@" + hostname + "'>" + linktext + "</a>"
+    
+    $('.contact-email')[0].innerHTML = code;
+});
